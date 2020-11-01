@@ -1,0 +1,58 @@
+{
+    "name": "kuhero",
+    "description": "websocket proxy on heroku",
+    "keywords": ["v2ray trojan-go shadowsocks gost brook tor"],
+    "env": {
+        "AA": {
+            "description": "初阶用户只需填写App name后按需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署",
+            "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含义"
+        },
+        "AUUID": {
+            "description": "UUID充当各个配置的路径和密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
+            "value": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
+        },
+        "CADDYIndexPage": {
+            "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/mixool/kuhero/blob/master/etc/CADDYIndexPage.md",
+            "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
+        },
+        "CONFIGCADDY": {
+            "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修改",
+            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/Caddyfile"
+        },
+        "CONFIGV2RAY": {
+            "description": "自定义网络地址读取配置运行V2RAY，不熟悉V2RAY配置的请勿修改",
+            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/v2ray.json"
+        },
+        "EnableBROOK": {
+            "description": "默认关闭BROOK，修改为true时开启",
+            "value": "false"
+        },
+        "EnableGOST": {
+            "description": "默认关闭GOST，修改为true时开启",
+            "value": "false"
+        },
+        "EnableSS": {
+            "description": "默认启用SS，修改为false时关闭",
+            "value": "true"
+        },
+        "EnableTOR": {
+            "description": "默认启用TOR，修改为false时关闭",
+            "value": "true"
+        },
+        "EnableV2RAY": {
+            "description": "默认启用V2RAY，修改为false时关闭",
+            "value": "true"
+        },
+        "ParameterGOSTMETHOD": {
+            "description": "自定义GOST运行参数，不熟悉GOST配置的请勿修改",
+            "value": "-L=ss+ws://AEAD_CHACHA20_POLY1305:$AUUID@127.0.0.1:2234?path=/$AUUID-gost"
+        },
+        "ParameterSSENCYPT": {
+            "description": "SS加密方式",
+            "value": "chacha20-ietf-poly1305"
+        }
+    },
+    "website": "https://github.com/mixool/kuhero",
+    "repository": "https://github.com/mixool/kuhero",
+    "stack": "container"
+}
