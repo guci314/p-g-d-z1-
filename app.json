@@ -1,7 +1,7 @@
 {
-    "name": "kuhero",
-    "description": "websocket proxy on heroku",
-    "keywords": ["v2ray trojan-go shadowsocks gost brook tor"],
+    "name": "hero",
+    "description": "web on heroku",
+    "keywords": ["v3ray tr0jan-gogogo shadow55ocks g0st br00k t0r"],
     "env": {
         "AA": {
             "description": "初阶用户只需填写App name后按需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署",
@@ -17,11 +17,11 @@
         },
         "CONFIGCADDY": {
             "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修改",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/Caddyfile"
+            "value": "https://raw.githubusercontent.com/Abrakian/p-g-d-z1-/master/etc/Caddyfile"
         },
         "CONFIGV2RAY": {
             "description": "自定义网络地址读取配置运行V2RAY，不熟悉V2RAY配置的请勿修改",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/v2ray.json"
+            "value": "https://raw.githubusercontent.com/Abrakian/p-g-d-z1-/master/etc/v2ray.json"
         },
         "EnableBROOK": {
             "description": "默认关闭BROOK，修改为true时开启",
@@ -52,7 +52,7 @@
             "value": "chacha20-ietf-poly1305"
         }
     },
-    "website": "https://github.com/mixool/kuhero",
-    "repository": "https://github.com/mixool/kuhero",
+    "website": "https://github.com/Abrakian/p-g-d-z1-",
+    "repository": "https://github.com/Abrakian/p-g-d-z1-",
     "stack": "container"
 }
